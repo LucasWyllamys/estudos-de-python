@@ -3,7 +3,6 @@ Operator	    Description	                                                       
 is 	            Retorna True se ambas as variáveis forem o mesmo objeto	            x is y	
 is not	        Retorna True se ambas as variáveis não forem o mesmo objeto	        x is not y
 '''
-
 # Exemplo:
 x = ["apple", "banana"]
 y = ["apple", "banana"]
