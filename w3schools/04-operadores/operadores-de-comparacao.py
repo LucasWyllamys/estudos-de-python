@@ -1,4 +1,4 @@
-''' Operadores de comparação são usados ​​para comparar dois valores:
+''' Operadores de comparação são usados para comparar dois valores:
 Operator	Name	                    Example
 ==	        Equal	                    x == y	
 !=	        Not equal	                x != y	

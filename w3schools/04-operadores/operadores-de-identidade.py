@@ -11,3 +11,4 @@ z = x
 print(x is z)   # Retorna True porque z é o mesmo objeto que x
 print(x is y)   # Retorna False porque x não é o mesmo objeto que y, mesmo que tenham o mesmo conteúdo
 print(x == y)   # Para demonstrar a diferença entre "is" e "==": esta comparação retorna True porque x é igual a y
+

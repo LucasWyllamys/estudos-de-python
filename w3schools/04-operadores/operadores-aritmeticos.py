@@ -1,4 +1,4 @@
-''' Operadores aritméticos são usados ​​com valores numéricos para executar operações matemáticas comuns:
+''' Operadores aritméticos são usados com valores numéricos para executar operações matemáticas comuns:
 Operator	Name	            Example
 +	        Addition	        x + y	
 -	        Subtraction	        x - y	
