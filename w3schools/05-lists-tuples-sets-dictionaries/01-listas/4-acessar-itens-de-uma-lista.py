@@ -24,3 +24,4 @@ print(myList[2:])   # Saída: ['morango', 'laranja', 'melão', 'manga', 'limão'
 # Faixa de índices negativos: Especifique índices negativos se quiser iniciar a pesquisa a partir do final da lista:
 myList = ['maçã', 'banana', 'morango', 'laranja', 'melão', 'manga', 'limão', 'uva']
 print(myList[-4:-1])    # Saída: ['melão', 'manga', 'limão'] (Obs.: Este exemplo retorna os itens de 'melão'(-4) para, mas NÃO incluindo 'uva'(-1))
+
