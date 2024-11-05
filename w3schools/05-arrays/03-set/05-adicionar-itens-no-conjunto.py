@@ -14,3 +14,11 @@ thisSet.update(tropical)
 
 print(thisSet)
 # Saída: {'papaya', 'banana', 'apple', 'pineapple', 'cherry', 'mango'}
+
+# O objeto no método update() não precisa ser um conjunto, pode ser qualquer objeto iterável (tuplas, listas, dicionários etc.).
+thisSet = {"apple", "banana", "cherry"}
+myList = ["kiwi", "orange"]
+
+thisSet.update(myList)
+
+print(thisSet)  # Saída: {'cherry', 'kiwi', 'banana', 'orange', 'apple'}
