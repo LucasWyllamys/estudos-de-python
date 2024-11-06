@@ -1,9 +1,9 @@
 ''' Operadores de comparação são usados para comparar dois valores:
-Operator	Name	                    Example
-==	        Equal	                    x == y	
-!=	        Not equal	                x != y	
->	        Greater than	            x > y	
-<	        Less than	                x < y	
->=	        Greater than or equal to	x >= y	
-<=	        Less than or equal to	    x <= y
+Operator	Name	              Example
+==	        É igual a	          x == y	
+!=	        Não é igual a	      x != y	
+>	        Maior que	          x > y	
+<	        Menor que	          x < y	
+>=	        Maior ou igual a	  x >= y	
+<=	        Menor ou igual a	  x <= y
 '''
