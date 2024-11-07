@@ -28,7 +28,7 @@ else:
     print("a é maior que b")
 # Saída: a é maior que b
 
-# Você também pode ter um elsesem o elif:
+# Você também pode ter um else sem o elif:
 a = 200
 b = 33
 
