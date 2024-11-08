@@ -1,0 +1,1 @@
+# A herança nos permite definir uma classe que herda todos os métodos e propriedades de outra classe.
