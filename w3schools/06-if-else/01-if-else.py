@@ -42,8 +42,7 @@ else:
 a = 200
 b = 33
 
-if a > b:
-    print("a é maior que b")
+if a > b: print("a é maior que b")
 
 # Se você tiver apenas uma instrução para executar, uma para if e uma para else, você pode colocar tudo na mesma linha.
 # Essa técnica é conhecida como Operadores Ternários ou Expressões Condicionais:
