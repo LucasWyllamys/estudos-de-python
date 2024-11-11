@@ -1,7 +1,8 @@
 # Considere um módulo como sendo o mesmo que uma biblioteca de código.
 # Um arquivo contendo um conjunto de funções, matrizes, dicionários, objetos etc. que você deseja incluir em seu aplicativo.
 # Você pode criar um alias ao importar um módulo, usando a palavra-chave as.
-
+# Você pode escolher importar apenas partes de um módulo usando a palavra-chave from. Exemplo: 
+# from modulo_teste import person1.
 import modulo_teste as mt     # Importação do módulo
 
 # Invocando uma função do módulo:
