@@ -3,8 +3,8 @@
 # __iter__(): Este método deve retornar o próprio objeto iterador. Ele é chamado quando um iterador é inicializado, por exemplo, ao usar um for loop.
 # __next__(): Este método retorna o próximo item da sequência. Quando não há mais itens para retornar, ele deve levantar a exceção StopIteration.
 # StopIteration: No método __next__(), podemos adicionar uma condição de término para gerar um erro se a iteração for feita um número especificado de vezes: Para evitar que a iteração continue para sempre, podemos usar a instrução StopIteration.
-# raise: Esta palavra-chave é usada para levantar uma exceção em Python. Quando uma exceção é levantada, a execução do programa é interrompida e o controle é passado para o bloco de exceção correspondente, se houver.
-# StopIteration: Esta é uma exceção embutida em Python que sinaliza o fim de uma iteração. Quando o método __next__() de um iterador levanta esta exceção, ele informa ao loop que não há mais itens a serem iterados.
+    # raise: Esta palavra-chave é usada para levantar uma exceção em Python. Quando uma exceção é levantada, a execução do programa é interrompida e o controle é passado para o bloco de exceção correspondente, se houver.
+    # StopIteration: Esta é uma exceção embutida em Python que sinaliza o fim de uma iteração. Quando o método __next__() de um iterador levanta esta exceção, ele informa ao loop que não há mais itens a serem iterados.
 
 class Contador:
     def __init__(self, limite):     # Método __init__()

@@ -1,9 +1,9 @@
 # A palavra "polimorfismo" significa "muitas formas" e, em programação, refere-se a métodos/funções/operadores com o mesmo nome que podem ser executados em muitos objetos ou classes.
-# As classes filhas herdam as propriedades e métodos da classe pai.
+# As classes filhos herdam as propriedades e métodos da classe pai.
 # Polimorfismo de função: Um exemplo de uma função Python que pode ser usada em diferentes objetos é a função len() que pode ser usada em strings, tuplas, dicionários etc.
 # O polimorfismo é frequentemente usado em métodos de classe, onde podemos ter várias classes com o mesmo nome de método.
-# Por exemplo, digamos que temos três classes: Car, Boat, e Plane, e todas elas têm um método chamado move():
-# Por causa do polimorfismo, podemos executar o mesmo método para todas as três classes que são diferentes e independentes entre si:
+
+# Por exemplo, digamos que temos três classes: Car, Boat, e Plane, e todas elas têm um método chamado move(). Por causa do polimorfismo, podemos executar o mesmo método para todas as três classes que são diferentes e independentes entre si:
 class Vehicle:  # Classe pai
     def __init__(self, brand, model):
         self.brand = brand
