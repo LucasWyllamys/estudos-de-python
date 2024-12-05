@@ -1,22 +1,32 @@
-# Uma RegEx, ou Expressão Regular, é uma sequência de caracteres que forma um padrão de pesquisa.
-# O RegEx pode ser usado para verificar se uma string contém o padrão de pesquisa especificado. Com o Regex você consegue:
-    # Realizar buscas por padrões e strings.
-    # Fazer validações de padrões e texto.
-    # Substituições de padõres e strings.
-# O Python tem uma biblioteca integrada chamada re, que pode ser usada para trabalhar com expressões regulares.
+'''
+Método              Descrição
+re.compile()        Compila um padrão de expressão regular em um objeto de expressão regular, que pode ser usado para realizar correspondências.
+re.match()          Verifica se o padrão corresponde ao início da string. Retorna um objeto match ou None.
+re.fullmatch()      Verifica se o padrão corresponde à string inteira. Retorna um objeto match ou None.
+re.search()         Procura pelo padrão em qualquer parte da string. Retorna o primeiro objeto match encontrado ou None.
+re.findall()        Encontra todas as ocorrências do padrão na string e retorna uma lista de correspondências.
+re.finditer()       Encontra todas as ocorrências do padrão e retorna um iterador com objetos match.
+re.sub()            Substitui as ocorrências do padrão na string por uma nova string (repl). O parâmetro count limita o número de substituições.
+re.subn()           Semelhante a re.sub, mas retorna uma tupla contendo a string modificada e o número de substituições feitas.
+re.split()          Divide a string com base no padrão e retorna uma lista das partes. O parâmetro maxsplit limita o número de divisões.
+re.escape()         Escapa todos os caracteres não alfanuméricos na string, tornando-a segura para uso em uma expressão regular.
+re.purge()          Limpa o cache de expressões regulares compiladas.
+re.error            Exceção levantada para erros relacionados a expressões regulares.
+'''
 
+# O Python tem uma biblioteca integrada chamada re, que pode ser usada para trabalhar com expressões regulares.
 import re
 
-string = "Lucas Wyllamys"
+string = "Lucas Wyllamys Carmo da Silva - Lucas Wyllamys"
 
-# O método compile() cria um padrão:
-padrao = re.compile("Lucas Wyllamys")   # Entre os parenteses deste método defina um padrão de string
+padrao = re.compile("Lucas Wyllamys")
 
-# O método fullmatch verifica que a string inteira atende ao padrão especificado.
-# Se a string não atender inteiramente ao padrão especificado, retorna None. 
-# Se a string atende ao padrão, retorna o objeto do tipo re:
-result = re.fullmatch(padrao, string)   
-print(result)   # Saída: <re.Match object; span=(0, 14), match='Lucas Wyllamys'>
-# Obs.: o atributo span indica onde que a string começa e termina (o valor de término não entra na conta!).
+result = re.fullmatch(padrao, string)  
+print(result)   # Saída: None
 
-# https://www.google.com.br/
+result = re.search(padrao, string)
+print(result)   # Saída: <re.Match object; span=(0, 14), match='Lucas Wyllamys'>. O atributo span indica onde que a string começa e termina (o valor de término não entra na conta!).
+
+result = re.findall(padrao, string)
+print(result)   # Saída: ['Lucas Wyllamys', 'Lucas Wyllamys']
+
