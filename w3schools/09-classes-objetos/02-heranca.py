@@ -23,7 +23,7 @@ student.printName()  # Saída: David Wilkerson
 
 # Quando você adiciona a função __init__(), a classe filha não herdará mais a função __init__() da classe pai.
 # A função __init__() da classe filho substitui a herança da função __init__() da classe pai.
-# Para manter a herança da função __init__() pai, adicione uma chamada à função __init__() pai:
+# Para manter a herança da função __init__() pai, adicione uma chamada à função __init__() pai (Person.__init__(self, fname, lname)):
 class Student(Person):  # Classe filho
     def __init__(self, fname, lname):
         Person.__init__(self, fname, lname)
