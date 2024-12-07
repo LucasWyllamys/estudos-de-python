@@ -23,5 +23,8 @@ winfo_children(): Retorna todos os widgets filhos do widget pai.
 
 get(): Retorna o estado do widget.
 
-cget(): Retorna o valor do atributo especificado.
+cget(): Retorna o valor do atributo especificado entre os parênteses.
+
+set(): Atribue o valor especificado (entre parêntese) à variável do tipo: variable = ctk.StringVar(value="")
+    - Ex.: variable.set(value)
 '''
