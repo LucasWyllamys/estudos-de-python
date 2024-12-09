@@ -8,20 +8,19 @@
 import customtkinter as ctk
 
 class App(ctk.CTk):
-    def __ini__(self):
+    def __init__(self):
         super().__init__()
         self.title("Exemplo de StringVar")
-        self.geometry("400x220")
-        self.grid_columnconfigure(index=1, weight=1)
+        self.grid_columnconfigure(index=(0, 1), weight=1)
         self._set_appearance_mode("dark")   # Modos: "dark", "light"
-        self.set_default_color_theme("green") # Opções de temas: "blue", "dark-blue", "green"
+        ctk.set_default_color_theme("green") # Opções de temas: "blue", "dark-blue", "green"
 
         # Variável de controle
         self.var = ctk.StringVar(value="Texto inicial")
 
         # Campo de entrada
         self.entry = ctk.CTkEntry(master=self, textvariable=self.var)
-        self.entry.grid(row=0, column=0, padx=10, pady=10, sticky="w")
+        self.entry.grid(row=0, column=0, padx=10, pady=10, sticky="ew", columnspan=2)
 
         # Botão para alterar o valor programaticamente
         self.change_button = ctk.CTkButton(master=self, text="Alterar Texto", command=self.change_text)
@@ -32,7 +31,7 @@ class App(ctk.CTk):
         self.show_button.grid(row=2, column=1, padx=10, pady=10, sticky="w")
 
         # Adiciona um trace
-        self.var.trace_add("w", self.on_change)
+        self.var.trace(mode="w", callback=self.on_change)
 
     def change_text(self):
         self.var.set("Texto alterado")
