@@ -32,7 +32,7 @@ class CheckboxFrame(ctk.CTkFrame):  # A classe CheckboxFrame herda de ctk.CTkFra
                 checked_checkboxes.append(checkbox.cget("text"))      # Adiciona o texto do checkbok na lista.
         return checked_checkboxes   # Retorna uma lista das checkboxes marcadas.
 
-class RadiobuttonFrame(ctk.CTkFrame):   # A classe RadiobuttonFrame herda de ctk.CTkFrame.
+class RadiobuttonFrame(ctk.CTkScrollableFrame):   # A classe RadiobuttonFrame herda de ctk.CTkFrame.
     # Esta classe tem por cria frames com radiobuttons e retorna o rótulo do radiobutton selecionado quando o botão é pressionado (método get).
     def __init__(self, main, title, values):
         super().__init__(main)  # Inicializa a classe base (ctk.CTkFrame) e conecta o frame ao widget pai (main).
@@ -45,7 +45,7 @@ class RadiobuttonFrame(ctk.CTkFrame):   # A classe RadiobuttonFrame herda de ctk
         # Cria o label para ser o título do frame.
         self.title = ctk.CTkLabel(master=self, text=self.title, fg_color="gray30", corner_radius=6)
         # Configuração do label.
-        self.title.grid(row=0, column=0, padx=10, pady=(10, 0), sticky="ew")    
+        self.title.grid(row=0, column=0, padx=10, pady=(3, 0), sticky="ew")    
 
         # Cria dinamicamente os radiobuttons de acordo com os valores fornecidos na lista 'values'.
         for i, value in enumerate(self.values):
@@ -65,14 +65,14 @@ class App(ctk.CTk):   # ctk.CTk é a aplicação e é a classe pai.
 
         # Configurações iniciais na root
         self.title("Meu Aplicativo")                            # Especifica o título.
-        self.geometry("400x220")                                # Especifica as dimensões da aplicação.
-        self.grid_columnconfigure(index=(0, 1), weight=1)       # Atribui peso 1 para as colunas 0 e 1.
+        #self.geometry("400x220")                                # Especifica as dimensões da aplicação.
+        self.grid_columnconfigure(index=(0, 1, 2), weight=1)    # Modifica o peso das colunas
         self.grid_rowconfigure(index=0, weight=1)               # Atribui peso 1 para a linha 0.
 
         # Criação (instanciamento) dos frames com controles (widgets)
-        self.frame1 = CheckboxFrame(main=self, title="Frame 1", values=["checkbox 1", "checkbox 2", "checkbox 3"])  
+        self.frame1 = CheckboxFrame(main=self, title="Frame 1", values=["checkbox 1", "checkbox 2", "checkbox 3"])
         self.frame2 = CheckboxFrame(main=self, title="Frame 2", values=["checkbox a", "checkbox b"])
-        self.frame3 = RadiobuttonFrame(main=self, title="Frame 3", values=["option 1", "option 2"])
+        self.frame3 = RadiobuttonFrame(main=self, title="Frame 3", values=["option 1", "option 2", "option 3", "option 4", "option 5", "option 6", "option 7", "option 8"])
         
         # Configuração dos frames
         self.frame1.grid(row=0, column=0, padx=10, pady=(10, 0), sticky="nsew")
@@ -90,5 +90,7 @@ class App(ctk.CTk):   # ctk.CTk é a aplicação e é a classe pai.
 
         print(f"Checkboxes marcadas: {checked_checkboxes}")     # Saída: Retorna as checkboxes selecionadas.     
 
-app = App()     # Instancia a classe (cria o objeto).
-app.mainloop()  # Executa a root em loop.
+ctk.set_appearance_mode("dark")             # Modifica o modo da aplicação para "dark".
+ctk.set_default_color_theme("dark-blue")    # Modifica o tema da aplicação para "dark-blue"
+app = App()                                 # Instancia a classe (cria o objeto).
+app.mainloop()                              # Executa a root em loop.
