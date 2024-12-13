@@ -25,3 +25,7 @@ print(result)
 # Validação CEP:
 
 # Validação Telefone:
+
+# Pesquise a string para ver se ela começa com "The" e termina com "Spain":
+txt = "The rain in Spain"
+x = re.search("^The.*Spains$", txt)
