@@ -1,8 +1,7 @@
-'''
-A compreensão de lista oferece uma sintaxe mais curta quando você deseja criar uma nova lista com base nos valores de uma lista existente.
-Exemplo: Com base em uma lista de frutas, você quer uma nova lista, contendo apenas as frutas com a letra "a" no nome.
-Sem compreensão de lista, você terá que escrever uma fordeclaração com um teste condicional dentro:
-'''
+# A compreensão de lista oferece uma sintaxe mais curta quando você deseja criar uma nova lista com base nos valores de uma lista existente.
+
+# Exemplo: Com base em uma lista de frutas, você quer uma nova lista, contendo apenas as frutas com a letra "a" no nome.
+# Sem compreensão de lista, você terá que escrever uma declaração for com um teste condicional dentro:
 fruits = ['maçã', 'banana', 'morango', 'caja', 'limão']
 newList = []
 
