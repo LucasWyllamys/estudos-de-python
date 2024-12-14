@@ -6,7 +6,7 @@
         □ Reutilização: Classes focadas podem ser reutilizadas em outros contextos.
 '''
 
-# Problema: Uma única classe realiza múltiplas tarefas: gerencia dados e salva informações no disco:
+# Violação do Princípio: Uma única classe realiza múltiplas tarefas: gerencia dados e salva informações no disco:
 ''' 
 # Quebra o SRP
 class FileManager:

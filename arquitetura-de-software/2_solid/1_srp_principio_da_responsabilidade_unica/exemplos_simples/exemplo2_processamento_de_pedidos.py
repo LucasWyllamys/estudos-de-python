@@ -6,7 +6,7 @@
         □ Reutilização: Classes focadas podem ser reutilizadas em outros contextos.
 '''
 
-# Problema: Uma única classe gerencia pedidos, calcula preços e processa pagamentos:
+# Violação do Princípio: Uma única classe gerencia pedidos, calcula preços e processa pagamentos:
 '''
 # Quebra o SRP
 class OrderManager:

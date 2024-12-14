@@ -6,7 +6,7 @@
         □ Reutilização: Classes focadas podem ser reutilizadas em outros contextos.
 '''
 
-# Problema: Uma classe gerencia usuários e envia emails:
+# Violação do Princípio: Uma classe gerencia usuários e envia emails:
 '''
 # Quebra o SRP
 class UserManager:
