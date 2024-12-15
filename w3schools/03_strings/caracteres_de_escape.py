@@ -1,9 +1,5 @@
 # Para inserir caracteres ilegais em uma string, use um caractere de escape.
 # Um caractere de escape é uma barra invertida (\) seguida pelo caractere que você deseja inserir.
-# Um exemplo de caractere ilegal são aspas duplas dentro de uma string cercada por aspas duplas.
-txt = 'Nós somos os chamados \'Vikings\' do norte'  
-print(txt)  # Saída: "Nós somos os chamados 'Vikings' do norte"
-
 ''' Caracteres de escape:
 \'                  Citação única
 \\                  Barra invertida
@@ -15,3 +11,6 @@ print(txt)  # Saída: "Nós somos os chamados 'Vikings' do norte"
 \ooo
 '''
 
+# Um exemplo de caractere ilegal são aspas duplas dentro de uma string cercada por aspas duplas.
+txt = 'Nós somos os chamados \'Vikings\' do norte'  
+print(txt)  # Saída: "Nós somos os chamados 'Vikings' do norte"
