@@ -5,13 +5,28 @@
     - ISP: As classes não devem ser forçadas a depender de interfaces que não utilizam.
     - DIP: Módulos de alto nível não devem ser dependentes de módulos de baixo nível; ambos devem depender de abstrações. Detalhes devem depender de abstrações, não o inverso.
 '''
+from repositorio import Repositorio
 
 class Relatorio:
     def __init__(self):
-        pass
+        self.caminho_relatorio = ""
 
-    def generate(self):
-        print("Gerando relatório...")
+    def gerar(self, dados, caminho_template: str):
+        self.__carregar_template(caminho_template)
+        self.__renderizar(dados)
+        self.__salvar(Repositorio().caminho_repositorio)
 
-    def display(self):
-        print("Exibindo relatório...")
+    @staticmethod
+    def __carregar_template(caminho_template):
+        print(f"Carrega o template: {caminho_template}")
+
+    @staticmethod
+    def __renderizar(dados):
+        print(f"Renderiza os dados: {dados}")
+
+    def __salvar(self, caminho_repositorio):
+        self.caminho_relatorio = caminho_repositorio + r"\relatorios\relatorio.pdf"
+        print(f"Salva o relatório: {self.caminho_relatorio}, no repositório: {caminho_repositorio}")
+
+    def exibir(self):
+        print(f"Exibe o relatório: {self.caminho_relatorio}")

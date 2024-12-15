@@ -26,17 +26,17 @@ class Relatorio:
         print(f"Salvando no repositório o arquivo do relatório: {self.caminho_repositorio}")
         self.caminho_relatorio = self.caminho_repositorio + r"relatorios\relatorio.pdf"
 
-    def salvar_no_banco(self):
-        print(f"Salvando no banco o caminho do relatório: {self.caminho_relatorio}")
-
     def exibir(self):
         print(f"Exibindo na tela o relatório: {self.caminho_relatorio}")
 
     def imprimir(self):
         print(f"Imprimindo na impressora o relatório: {self.caminho_relatorio}")
 
-    def enviar(self):
+    def enviar(self, destinatario, assunto, corpo):
         print(f"Enviando por e-mail o relatório: {self.caminho_relatorio}")
+        print(f"\tDestinatário: {destinatario}")
+        print(f"\tAssunto: {assunto}")
+        print(f"\tCorpo: {corpo}")
 
 dados = {"Nome": "Lucas", "Idade": 28}
 caminho_template = r"C:\Users\lucas\Documents\index.html"
@@ -44,8 +44,7 @@ caminho_repositorio = r"C:\Users\lucas\Documents\GitHub"
 relatorio = Relatorio(dados, caminho_template, caminho_repositorio)
 
 relatorio.gerar()  
-relatorio.salvar_no_repositorio()  
-relatorio.salvar_no_banco()        
+relatorio.salvar_no_repositorio()         
 relatorio.exibir() 
 relatorio.imprimir() 
-relatorio.enviar()
+relatorio.enviar("lucas.wyllamys@neoenergia.com", "Assunto de E-mail", "Corpo do E-mail")
