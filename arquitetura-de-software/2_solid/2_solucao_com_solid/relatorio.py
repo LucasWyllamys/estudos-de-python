@@ -4,7 +4,7 @@ class Relatorio:
     def __init__(self):
         self.caminho_relatorio = ""
 
-    def gerar(self, dados, caminho_template: str):
+    def gerar(self, dados, caminho_template: str, caminho_repositorio: str):
         self.__carregar_template(caminho_template)
         self.__renderizar(dados)
         self.__salvar(Repositorio().caminho_repositorio)

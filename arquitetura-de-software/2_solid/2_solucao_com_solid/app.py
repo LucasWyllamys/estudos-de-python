@@ -13,7 +13,7 @@ relatorio = Relatorio()
 relatorio.gerar(
     {"Nome": "Lucas", "Idade": 28}, 
     r"C:\Users\lucas\Documents\index.html"
-    )
+)
 relatorio.exibir()
 
 impressora = Impressora()
@@ -25,4 +25,4 @@ email.enviar(
     "Teste de envio de relatório", 
     "Segue anexo relatório.",
     relatorio.caminho_relatorio
-    )
+)
