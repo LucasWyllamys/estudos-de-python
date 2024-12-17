@@ -1,5 +1,3 @@
-from repositorio import Repositorio
-
 class Relatorio:
     def __init__(self):
         self.caminho_relatorio = ""
@@ -7,7 +5,7 @@ class Relatorio:
     def gerar(self, dados, caminho_template: str, caminho_repositorio: str):
         self.__carregar_template(caminho_template)
         self.__renderizar(dados)
-        self.__salvar(Repositorio().caminho_repositorio)
+        self.__salvar(caminho_repositorio)
 
     @staticmethod
     def __carregar_template(caminho_template):
