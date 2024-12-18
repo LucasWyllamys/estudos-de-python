@@ -14,10 +14,19 @@ purge()         Limpa o cache de expressões regulares compiladas.
 error           Exceção levantada para erros relacionados a expressões regulares.
 '''
 
-''' Principais métodos
-Método (re)     Descrição 
-fidall()        Retorna uma lista contendo todas as correspondências.           
-search()        Retorna um objeto Match se houver uma correspondência em qualquer lugar da string.
-split()         Retorna uma lista onde a string foi dividida em cada correspondência.
-sub()           Substitui uma ou muitas correspondências por uma string.
-'''
+# Principais métodos:-----------------------------------------------------------------------------------
+import re
+
+# Exemplo com o método fidall():
+string = "The rain in Spain"
+lista = re.findall("ai", string)
+print(lista)    # Saída: ['ai', 'ai']
+# A lista contém as correspondências na ordem em que foram encontradas.
+# Se nenhuma correspondência for encontrada, uma lista vazia será retornada:
+
+# Exemplo com o método search():
+
+
+# Exemplo com o método split():
+    
+# Exemplo com o método sub():
