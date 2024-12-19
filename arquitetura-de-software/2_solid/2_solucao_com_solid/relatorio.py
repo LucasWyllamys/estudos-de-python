@@ -1,23 +1,32 @@
+from template import iTemplate
+from impressora import iImpressora
+import mensagem
+import logging
+from typing import Optional
+
+logging.basicConfig(level=logging.DEBUG)
+
 class Relatorio:
-    def __init__(self):
-        self.caminho_relatorio = ""
+    def __init__(self, template: iTemplate, impressora: iImpressora, mensagem: mensagem.iMensagem):
+        self.template = template
+        self.impressora = impressora
+        self.mensagem = mensagem
+        self.caminho_relatorio = None
 
-    def gerar(self, dados, caminho_template: str, caminho_repositorio: str):
-        self.__carregar_template(caminho_template)
-        self.__renderizar(dados)
-        self.__salvar(caminho_repositorio)
-
-    @staticmethod
-    def __carregar_template(caminho_template):
-        print(f"Carrega o template: {caminho_template}")
-
-    @staticmethod
-    def __renderizar(dados):
-        print(f"Renderiza os dados: {dados}")
-
-    def __salvar(self, caminho_repositorio):
-        self.caminho_relatorio = caminho_repositorio + r"\relatorios\relatorio.pdf"
-        print(f"Salva o relatório: {self.caminho_relatorio}, no repositório: {caminho_repositorio}")
+    def gerar(self, caminho_template: str, dados: dict, caminho_repositorio: str):
+        self.caminho_relatorio = self.template.renderizar(caminho_template, dados, caminho_repositorio)
 
     def exibir(self):
-        print(f"Exibe o relatório: {self.caminho_relatorio}")
+        logging.debug(f"Exibe o relatório: {self.caminho_relatorio}")
+
+    def imprimir(self):
+        self.impressora.imprimir(self.caminho_relatorio)
+
+    def enviar(self, destinatario: str, assunto: str, corpo: str, caminho_anexo: Optional[str] = None):
+        if isinstance(self.mensagem, mensagem.iEmail):  # Verifica se self.mensagem é uma instância da classe iEmail.
+            self.mensagem.enviar(destinatario, assunto, corpo, caminho_anexo)
+        elif isinstance(self.mensagem, mensagem.iMensagem):  # Verifica se self.mensagem é uma instância da classe iMensagem.
+            if isinstance(self.mensagem, mensagem.SMS):  # Verifica se self.mensagem é uma instância da classe SMS.
+                self.mensagem.enviar(destinatario, corpo)
+            else:
+                self.mensagem.enviar(destinatario, corpo, caminho_anexo)
