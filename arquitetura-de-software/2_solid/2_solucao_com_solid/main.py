@@ -8,10 +8,10 @@
 from relatorio import Relatorio
 import impressora
 import repositorios
-import mensagem
+from implementations import mensagem
 import template as temp
 
-relatorio = Relatorio(temp.TemplateHTML(), impressora.ImpressoraB(), mensagem.EmailSMTP())
+relatorio = Relatorio(temp.TemplateHTML(), impressora.ImpressoraB(), mensagem.EmailOutlook())
 relatorio.gerar(
     r"C:\Users\lucas\Documents\index.html",
     {"Nome": "Lucas", "Idade": 28}, 
@@ -20,8 +20,18 @@ relatorio.gerar(
 relatorio.exibir()
 relatorio.imprimir()
 relatorio.enviar(
-    "lucas.wyllamys@outlook.com", 
-    "Teste de envio de relatório", 
-    "Segue anexo relatório.",
-    relatorio.caminho_relatorio
+    {
+        "destinatario":     "lucas.wyllamys@outlook.com", 
+        "assunto":          "Teste de envio de relatório", 
+        "corpo":            "Olá, Mundo!",
+        "caminho_anexo":    relatorio.caminho_relatorio
+    }
 )
+'''Parâmetros:
+    mensagem: str, 
+    corpo: str
+    destinatario: str, 
+    numero_celular: str, 
+    assunto: str, 
+    caminho_anexo: str
+'''

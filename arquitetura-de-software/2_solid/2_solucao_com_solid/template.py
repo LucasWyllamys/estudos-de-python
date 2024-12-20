@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 import logging
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG)    # Configuração do log. Define onde o log será escrito.
 
 # Interface (classe abstrata) (contrato público claro): 
 class iTemplate(ABC):
@@ -12,6 +12,7 @@ class iTemplate(ABC):
 # Implementação da interface:
 class TemplateHTML(iTemplate):
     def __init__(self):     # Configurações iniciais para manipulação do arquivo HTML.
+        super().__init__()
         logging.debug(f"Configurações iniciais para manipular arquivos HTLM.")
         self.html_template = None
         self.new_html_template = None
@@ -36,6 +37,7 @@ class TemplateHTML(iTemplate):
 # Implementação da interface:
 class TemplateWord(iTemplate):
     def __init__(self):     # Configurações iniciais para manipulação do arquivo Word.
+        super().__init__()
         logging.debug(f"Configurações iniciais para manipular arquivos Word.")
         self.template_word = None
 
