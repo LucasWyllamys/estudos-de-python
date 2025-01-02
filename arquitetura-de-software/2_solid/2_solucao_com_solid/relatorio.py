@@ -2,7 +2,6 @@ from template import iTemplate
 from impressora import iImpressora
 from interfaces.mensagem import iMensagem
 import logging
-from typing import Optional
 
 logging.basicConfig(level=logging.DEBUG)    # Configuração do log. Define onde o log será escrito.
 
