@@ -1,4 +1,8 @@
 import logging
+# from ...interfaces.mensagem import iMensagem
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from interfaces.mensagem import iMensagem
 
 logging.basicConfig(level=logging.DEBUG)    # Configuração do log. Define onde o log será escrito.

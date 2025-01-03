@@ -11,7 +11,7 @@ import repositorios
 from implementations import mensagem
 import template as temp
 
-relatorio = Relatorio(temp.TemplateHTML(), impressora.ImpressoraB(), mensagem.EmailOutlook())
+relatorio = Relatorio(temp.TemplateWord(), impressora.ImpressoraB(), mensagem.EmailOutlook())
 relatorio.gerar(
     r"C:\Users\lucas\Documents\index.html",
     {"Nome": "Lucas", "Idade": 28}, 
