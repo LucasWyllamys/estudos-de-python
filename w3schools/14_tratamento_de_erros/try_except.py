@@ -41,4 +41,21 @@ else:
 # finally: Este bloco, se especificado, será executado independentemente se o bloco try gerar um erro ou não:
 try:
     print(x)
-except
+except:
+    print("Algo deu errado!")               # Saída: Algo deu errado!
+finally:
+    print("O 'try except' está concluído")  # Saída: O 'try except' está concluído
+# Isso pode ser útil para fechar objetos e limpar recursos:
+# Tente abrir e gravar em um arquivo que não é gravável:
+try:
+    file = open(r"w3schools\13_try_except\testfile.txt")
+    try: 
+        file.write("Testando o try.")
+    except:
+        print("Algo deu errado ao gravar no arquivo!")  # Saída: Algo deu errado ao gravar no arquivo!
+    finally:
+        file.close()
+        print("Fecha arquivo.") # Saída: Fecha arquivo.
+except:
+    print("Algo deu errado ao abrir o arquivo!")
+# O programa pode continuar, sem deixar o objeto de arquivo aberto.

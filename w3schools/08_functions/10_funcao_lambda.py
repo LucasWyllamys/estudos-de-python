@@ -4,13 +4,14 @@
 Sintaxe:
 lambda arguments : expression
 '''
+
 # A expressão é executada e o resultado é retornado:
-# Adicione 10 ao argumento ae retorne o resultado:
+# Adicione 10 ao argumento a e retorne o resultado:
 my_function = lambda a : a + 10
 print(my_function(5))     # Saída: 15
 
 # As funções lambda podem receber qualquer número de argumentos.
-# Multiplique argumento apor argumento be retorne o resultado:
+# Multiplique argumento a por argumento b e retorne o resultado:
 my_function2 = lambda a, b : a * b
 print(my_function2(5, 6))   # Saída: 30
 
