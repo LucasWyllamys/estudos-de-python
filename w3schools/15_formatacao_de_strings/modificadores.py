@@ -12,20 +12,20 @@ Modificador         Descrição
 : 		            Use um espaço para inserir um espaço extra antes de números positivos (e um sinal de menos antes de números negativos).
 :,                  Use uma vírgula como separador de milhar.                      		                
 :_		            Use um sublinhado como separador de milhar.
-:b		    
-:c		         
-:d		         
-:e		        
-:E		          
-:f		      
-:F		         
-:g		           
-:G		            
-:o		        
-:x		           
-:X		         
-:n		            
-:%		             
+:b		            Formato binário.
+:c		            Converte o valor no caractere Unicode correspondente.
+:d		            Formato decimal.
+:e		            Formato científico, com e minúsculo.
+:E		            Formato científico, com E maiúsculo.
+:f		            Formato de número de ponto fixo.
+:F		            Corrigir formato de número de ponto, em formato maiúsculo (mostrar inf e nan como INF e NAN).
+:g		            Formato geral.      
+:G		            Formato geral (usando E maiúsculo para notações científicas).
+:o		            Formato octal.
+:x		            Formato hexadecimal, minúsculas.
+:X		            Formato hexadecimal, maiúsculas.
+:n		            Formato numérico. 
+:%		            Formato percentual.
 '''
 
 # Exemplos:----------------------------------------------------------------------

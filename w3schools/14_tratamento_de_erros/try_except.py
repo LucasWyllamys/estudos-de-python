@@ -48,7 +48,7 @@ finally:
 # Isso pode ser útil para fechar objetos e limpar recursos:
 # Tente abrir e gravar em um arquivo que não é gravável:
 try:
-    file = open(r"w3schools\13_try_except\testfile.txt")
+    file = open(r"w3schools\13_try_except\test.txt")
     try: 
         file.write("Testando o try.")
     except:

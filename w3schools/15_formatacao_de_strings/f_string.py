@@ -1,5 +1,5 @@
 # F-string permite formatar partes selecionadas de uma string.
-# Para especificar uma string como uma f-string, basta colocar um fna frente do literal da string:
+# Para especificar uma string como uma f-string, basta colocar um f na frente do literal da string:
 txt = f"The price is 49 dollars"
 print(txt)  # Saída: The price is 49 dollars
 

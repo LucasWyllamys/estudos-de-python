@@ -1,0 +1,8 @@
+OlÃ¡! Bem-vindo ao test.txt 
+Este arquivo Ã© para fins de teste. 
+Boa sorte!
+Agora o arquivo tem mais conteúdo! 2025-01-08 10:41:49.003636
+Agora o arquivo tem mais conteúdo! 2025-01-08 10:47:01.406888
+Agora o arquivo tem mais conteúdo! 2025-01-08 10:47:12.393708
+Agora o arquivo tem mais conteúdo! 2025-01-08 10:48:00.900341
+Agora o arquivo tem mais conteúdo! 2025-01-08 10:48:09.196596
