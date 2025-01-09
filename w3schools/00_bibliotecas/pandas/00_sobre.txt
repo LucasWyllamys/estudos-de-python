@@ -1,0 +1,22 @@
+O que é Pandas?
+    Pandas é uma biblioteca Python usada para trabalhar com conjuntos de dados.
+    Ele tem funções para analisar, limpar, explorar e manipular dados.
+    O nome "Pandas" faz referência tanto a "Panel Data" quanto a "Python Data Analysis" e foi criado por Wes McKinney em 2008.
+
+Por que usar o Pandas?
+    O Pandas nos permite analisar big data e tirar conclusões baseadas em teorias estatísticas.
+    Os Pandas podem limpar conjuntos de dados confusos e torná-los legíveis e relevantes.
+    Dados relevantes são muito importantes na ciência de dados.
+
+Ciência de Dados: é um ramo da ciência da computação onde estudamos como armazenar, usar e analisar dados para derivar informações deles.
+
+O que os pandas podem fazer?
+    Pandas dá a você respostas sobre os dados. Como:
+        - Existe uma correlação entre duas ou mais colunas?
+        - O que é valor médio?
+        - Valor máximo?
+        - Valor mínimo?
+    Pandas também podem excluir linhas que não são relevantes ou que contêm valores errados, como valores vazios ou NULL. Isso é chamado de limpeza de dados.
+
+Onde está o código base do Pandas?
+    O código-fonte do Pandas está localizado neste repositório do github https://github.com/pandas-dev/pandas
