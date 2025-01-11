@@ -18,8 +18,11 @@
 # Importa um módulo:
     # import selenium
  
-# Desintala um pacote:
+# Desinstala um pacote:
     # pip uninstall selenium
 
 # Use o comando list para listar todos os pacotes instalados no seu sistema:
     # pip list
+
+# Exibe informações como versão, localização e dependências do pacote:
+    # pip show pandas
