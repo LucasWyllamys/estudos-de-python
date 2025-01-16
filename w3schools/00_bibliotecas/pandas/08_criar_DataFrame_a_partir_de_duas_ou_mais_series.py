@@ -8,7 +8,7 @@ data = {
     "duration": [50, 40, 45]
 }
 
-df = pd.DataFrame(data)
+df = pd.DataFrame(data)     # Carrega dados em um objeto DataFrame.
 print(df)
 ''' Saída:
    calories  duration

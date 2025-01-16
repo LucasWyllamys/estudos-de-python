@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv(r"w3schools\00_bibliotecas\pandas\arquivo_teste.csv", delimiter=";")
+df = pd.read_csv(r"w3schools\00_bibliotecas\pandas\arquivo_teste.csv", delimiter=",")
 print(df.to_string())
 ''' Saída:
      Duration  Pulse  Maxpulse Calories
