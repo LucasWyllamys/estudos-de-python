@@ -30,3 +30,12 @@
 
 # O que é DataFrame?
     # Um DataFrame é uma estrutura de dados bidimensional, como uma matriz bidimensional ou uma tabela com linhas e colunas (séries).
+
+# Limpeza de dados
+    # Limpeza de dados significa corrigir dados ruins em seu conjunto de dados.
+    # Dados ruins podem ser:
+        # Células vazias
+        # Dados em formato errado
+        # Dados errados
+        # Duplicatas
+        # Neste tutorial você aprenderá como lidar com todos eles.
