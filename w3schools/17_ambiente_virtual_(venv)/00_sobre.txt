@@ -1,0 +1,7 @@
+# Um ambiente virtual no Python é usado para isolar projetos, permitindo que cada um tenha suas próprias dependências e versões de bibliotecas, independentemente do que está instalado globalmente no sistema. Ele é especialmente útil quando se trabalha em múltiplos projetos que podem exigir diferentes versões de bibliotecas ou pacotes.
+
+# Principais vantagens de usar um ambiente virtual:
+    # Isolamento de dependências: Evita conflitos entre bibliotecas de diferentes projetos. Por exemplo, um projeto pode exigir uma versão mais antiga de uma biblioteca, enquanto outro precisa de uma versão mais recente.
+    # Facilidade de gerenciamento: Você pode instalar, atualizar e remover pacotes sem afetar outros projetos.
+    # Reprodutibilidade: Com um arquivo como o requirements.txt, você pode compartilhar as dependências do projeto com outras pessoas, garantindo que todos usem exatamente as mesmas versões das bibliotecas.
+    # Ambientes limpos: Você começa com um ambiente "limpo, sem pacotes instalados, exceto os padrões. Isso ajuda a evitar dependências não documentadas que podem causar problemas no futuro.

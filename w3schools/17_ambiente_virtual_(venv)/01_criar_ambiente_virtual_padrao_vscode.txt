@@ -1,0 +1,5 @@
+1. Clique em Configurações
+2. Clique em Paleta de Comandos... (Ctrl+Shift+P)
+3. Clique em Python: Criar Ambiente...
+3. Clique em Venv
+4. Selecione o Python que está instalado no seu computador para o ambiente virtual ser criado a partir dele.

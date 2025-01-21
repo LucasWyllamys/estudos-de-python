@@ -1,0 +1,2 @@
+# Use o comando abaixo no terminal para criar um ambiente virtual Python:
+python -m venv nome_do_ambiente

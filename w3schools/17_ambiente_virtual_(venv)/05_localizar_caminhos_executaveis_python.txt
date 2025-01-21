@@ -1,0 +1,4 @@
+# Use o comando abaixo para localizar o caminho completo dos executáveis do Python instalados no sistema. 
+# Indica qual Python está em uso, bem como qual versão do Python está sendo executada.
+# Quando você ativa um ambiente virtual, o comando abaixo mostra o caminho do executável específico do ambiente ativo:
+where python

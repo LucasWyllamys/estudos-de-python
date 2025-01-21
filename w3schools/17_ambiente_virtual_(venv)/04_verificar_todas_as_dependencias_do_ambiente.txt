@@ -1,0 +1,2 @@
+# Use o comando abaixo no terminal para verificar todas as dependências e versões instaladas no ambiente atual:
+pip freeze

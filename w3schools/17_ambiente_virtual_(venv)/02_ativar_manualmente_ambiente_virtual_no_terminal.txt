@@ -1,0 +1,5 @@
+# Para ativar o ambiente virtual no PowerShell:
+nome_do_ambiente\Scripts\Activate.ps1
+
+# Para ativar o ambiente virtual no cmd:
+nome_do_ambiente\Scripts\activate.bat

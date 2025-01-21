@@ -1,0 +1,2 @@
+# Use o comando abaixo para desativar o ambiente virtual:
+deactivate
