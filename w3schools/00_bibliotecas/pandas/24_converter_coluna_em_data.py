@@ -1,9 +1,10 @@
+# O método to_datetime() converte todas as células em uma coluna em datas.
+
 import pandas as pd
 
 df = pd.read_csv(r"w3schools\00_bibliotecas\pandas\arquivo_teste_2.csv")
 
-# format="mixed" tenta inferir o formato de cada data individualmente
-df["Date"] = pd.to_datetime(df["Date"], format="mixed")
+df["Date"] = pd.to_datetime(df["Date"], format="mixed")     # format="mixed" tenta inferir o formato de cada data individualmente
 print(df.to_string())
 
 ''' Saída:
